@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Ride</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<style>
+  .carousel-item img {
+      height: 100%;
+      width: 100%;
+  }
+  
+  .carousel-item {
+      height: 400px;
+  }
+  </style>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgb(15, 26, 15);">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Dream Ride
+      <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 640 512"><style>svg{fill:#fff705}</style><path d="M280 32c-13.3 0-24 10.7-24 24s10.7 24 24 24h57.7l16.4 30.3L256 192l-45.3-45.3c-12-12-28.3-18.7-45.3-18.7H64c-17.7 0-32 14.3-32 32v32h96c88.4 0 160 71.6 160 160c0 11-1.1 21.7-3.2 32h70.4c-2.1-10.3-3.2-21-3.2-32c0-52.2 25-98.6 63.7-127.8l15.4 28.6C402.4 276.3 384 312 384 352c0 70.7 57.3 128 128 128s128-57.3 128-128s-57.3-128-128-128c-13.5 0-26.5 2.1-38.7 6L418.2 128H480c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H459.6c-7.5 0-14.7 2.6-20.5 7.4L391.7 78.9l-14-26c-7-12.9-20.5-21-35.2-21H280zM462.7 311.2l28.2 52.2c6.3 11.7 20.9 16 32.5 9.7s16-20.9 9.7-32.5l-28.2-52.2c2.3-.3 4.7-.4 7.1-.4c35.3 0 64 28.7 64 64s-28.7 64-64 64s-64-28.7-64-64c0-15.5 5.5-29.7 14.7-40.8zM187.3 376c-9.5 23.5-32.5 40-59.3 40c-35.3 0-64-28.7-64-64s28.7-64 64-64c26.9 0 49.9 16.5 59.3 40h66.4C242.5 268.8 190.5 224 128 224C57.3 224 0 281.3 0 352s57.3 128 128 128c62.5 0 114.5-44.8 125.8-104H187.3zM128 384a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle active text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Select your city
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Kochi</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Trivandrum</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Kozhikode</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Kottayam</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Trissur</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Wayanad</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Malappuram</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Kollam</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle active text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Buy a Bike
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Ducati</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Kawasaki</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Harley Davidson</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Triumph</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">BMW</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Suzuki</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Yamaha</a></li>
+          </ul>
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="#">Sell Your Bike</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <a class="login mt-auto me-3" href="#">
+        <button class="btn btn-primary" style="background-color: beige; color:black" type="submit"><b>Login</b>
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#0561ff}</style><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+        </button>
+        </a>
+      </form>
+    </div>
+  </div>
+</nav>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="Images/honda-cbr1000rr-r-sp-30th-anniversary-01.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h4 style="font-family:Impact;color: rgb(255, 255, 255);">Get Your Dream Ride Today</h4>
+        <p style="font-family:Impact;color: rgb(255, 255, 255);">I'm not happy unless I'm riding my bike !</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="Images/harley.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h4 style="font-family:Impact;color: gold;">Get Your Dream Ride Today</h4>
+        <p style="font-family:Impact;color:gold;">Biking is the best way to destress  !</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="Images/93856007.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h4 style="font-family:Impact;color: gold;">Get Your Dream Ride Today</h4>
+        <p style="font-family:Impact;color: gold;">Two wheels, one love!</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="Images/triumph.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h4 style="font-family:Impact;color: rgb(10, 180, 24);">Get Your Dream Ride Today</h4>
+        <p style="font-family:Impact;color: rgb(10, 180, 24);">No plans. No maps !</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container-fluid">
+  <div class="row mt-3">
+    <div class="col-3">
+      <div class="card" style="width: 18rem;">
+        <img src="Images/Honda-CBR650R-web.jpg" class="card-img-top" alt="..." style="height:190px ;">
+        <div class="card-body">
+          <h5 class="card-title">CBR 650R</h5>
+          <p class="card-text">Powered by 648.72 CC BS6 engine which develops a power of 85.82 bhp and a trorque of 57. Nm</p>
+          <a href="#" class="btn btn-primary">View full details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card" style="width: 18rem;">
+        <img src="Images/2005-suzuki-gsx-r-600-gsx-r600k-gsxr600-600-gsx-r600-motorcycle-695.webp" class="card-img-top" alt="..." style="height: 190px; ;">
+        <div class="card-body">
+          <h5 class="card-title">Suzuki GSX-R 600</h5>
+          <p class="card-text">The 599cc GSX machine is good for 124 BHP at 13500 rpm and 69.6 Nm at 11500 rpm.</p>
+          <a href="#" class="btn btn-primary">View full details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card" style="width: 18rem;">
+        <img src="Images/street.webp" class="card-img-top" alt="..." style="height:190px ;">
+        <div class="card-body">
+          <h5 class="card-title">Triumph Street Triple R</h5>
+          <p class="card-text">Powered by 765cc BS6 engine which develops a power of 118.4 bhp and a torque of 80 Nm.</p>
+          <a href="#" class="btn btn-primary">View full details</a>
+        </div>  
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card" style="width: 18rem;">
+        <img src="Images/z900.jpg" class="card-img-top" alt="..." style="height:190px ;">
+        <div class="card-body">
+          <h5 class="card-title">Kawasaki  Z900</h5>
+          <p class="card-text">Powered by a 948 cc air-cooled engine which produces 125 PS @ 9500 rpm of power.</p>
+          <a href="#" class="btn btn-primary">View full details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 mt-3">
+      <div class="card" style="width: 18rem;">
+        <img src="Images/bmw-1250-gs-bumblebee-1-min-scaled-1.jpg.jpg" class="card-img-top" alt="..." style="height:190px ;">
+        <div class="card-body">
+          <h5 class="card-title">BMW 1250 GS</h5>
+          <p class="card-text">The BMW R 1250 GS is powered by a 1254 cc air-cooled engine which produces 136 PS @ 7750 rpm of power.</p>
+          <a href="#" class="btn btn-primary">View full details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 mt-3 mb-3">
+      <div class="card" style="width: 18rem;">
+        <img src="Images/2021-Honda-Africa-Twin-Adventure-Sports-White-Tricolour-1200x900.jpg" class="card-img-top" alt="..." style="height:190px ;">
+        <div class="card-body">
+          <h5 class="card-title">Honda Africa Twin</h5>
+          <p class="card-text">The Honda Africa Twin is powered by 1082cc BS6 engine which develops a power of 97.89 bhp and a torque of 103 Nm.</p>
+          <a href="#" class="btn btn-primary">View full details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 mt-3 mb-3">
+      <div class="card" style="width: 18rem;">
+        <img src="Images/my22-tiger-1200-subfamily-gt-mulyi-small-680x788.avif" class="card-img-top" alt="..." style="height:190px ;">
+        <div class="card-body">
+          <h5 class="card-title">Triumph Tiger 1200 GT</h5>
+          <p class="card-text"> The Triumph Tiger 1200 GT is powered by 1160 cc engine and puts a power of 150 PS . Torque remains at 130 Nm.</p>
+          <a href="#" class="btn btn-primary">View full details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 mt-3 mb-3">
+      <div class="card" style="width: 18rem;">
+        <img src="Images/Ducati-Multistrada-V4-S-Price.jpg" class="card-img-top" alt="..." style="height:190px ;">
+        <div class="card-body">
+          <h5 class="card-title">Ducati Multistrada V4</h5>
+          <p class="card-text">The Ducati Multistrada V4 is powered by 1158cc BS6 engine which develops a power of 167.62 bhp and a torque of 125 Nm.</p>
+          <a href="#" class="btn btn-primary">View full details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card text-center">
+  <div class="card-header">
+    Ruling the roads since 2023
+  </div>
+  <div class="card-body" style="background-color: rgb(15, 26, 15);">
+    <h5 class="card-title" style="font-family:Impact; color: gold">Dream Ride</h5>
+    <p class="card-text text-white"><b>We're here to fulfill your Superbike dream !</b></p>
+    <a class="insta me-3" href="https://www.instagram.com">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#d21414}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+    <a class="youtube me-3" href="https://www.youtube.com">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#d21414}</style><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+    <a class="fb" href="https://www.facebook.com">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#dc0a0a}</style><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  </div>
+</div>
+</body>
+</html>
